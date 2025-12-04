@@ -46,5 +46,17 @@ nav ul li a {
 }
 
 footer {
-    background-color: light blue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 41px;
+    background-color: blue;
+color: white;
+}
+
+.contact {
+display: flex;
+justify-content: space-around;
 }
