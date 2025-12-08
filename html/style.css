@@ -66,7 +66,7 @@ right: 600px;
 .doel {
 position: absolute;
 bottom: 25px;
-left: 625px;
+left: 500px;
 }
 
 .footer-logo {
@@ -78,8 +78,8 @@ left: 625px;
 
 .logo-text-footer {
     position: absolute;
-    bottom: 9px;
+    bottom: 5px;
     font-style: italic;
-    left: 900px;
-    font-size: 25px;
+    left: 750px;
+    font-size: 35px;
 }
