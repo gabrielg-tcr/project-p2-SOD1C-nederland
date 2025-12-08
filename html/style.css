@@ -83,3 +83,19 @@ left: 500px;
     left: 750px;
     font-size: 35px;
 }
+
+.islam_button {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: black;
+    width: 180px;
+    height: 180px;
+}
+
+.katholicisme_button {
+    position: absolute;
+    left: 145px;
+     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: black;
+    width: 180px;
+    height: 180px;
+}
