@@ -59,4 +59,27 @@ color: white;
 .contact {
 display: flex;
 justify-content: space-around;
+position: relative;
+right: 600px;
+}
+
+.doel {
+position: absolute;
+bottom: 25px;
+left: 625px;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 1px;
+    left: 1350px;
+}
+
+
+.logo-text-footer {
+    position: absolute;
+    bottom: 9px;
+    font-style: italic;
+    left: 900px;
+    font-size: 25px;
 }
