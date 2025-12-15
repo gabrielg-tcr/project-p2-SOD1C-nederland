@@ -86,7 +86,6 @@ left: 500px;
 
 .islam_button {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    background-color: black;
     width: 180px;
     height: 180px;
 }
@@ -95,7 +94,70 @@ left: 500px;
     position: absolute;
     left: 145px;
      clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    background-color: black;
     width: 180px;
     height: 180px;
+}
+
+.joden_button {
+    position: absolute;
+    left: 282px;
+     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    width: 180px;
+    height: 180px;
+    border-color: white;
+}
+
+.protestanteisme_button {
+    position: absolute;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    width: 180px;
+    height: 180px;
+ left: 7px;
+ bottom: 290px;
+border-color: black;
+}
+
+.hindoeisme_button {
+    position: absolute;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    width: 180px;
+    height: 180px;
+ left: 145px;
+ bottom: 290px;
+border-color: black;
+}
+
+.Boeddhisme_button {
+ position: absolute;
+ clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+ width: 180px;
+ height: 180px;
+ left: 285px;
+ bottom: 290px;
+border-color: black;
+}
+
+.religon_buttons {
+    position: absolute;
+    bottom: 150px;
+    left: 90px;
+}
+
+.description_css {
+position: relative;
+
+top: 50px;
+left: 650px;
+  background-color: white;
+  color: white;
+  width: 700px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+  border: 8px solid orange;
+  text-align: center;
+  color: black;
 }
