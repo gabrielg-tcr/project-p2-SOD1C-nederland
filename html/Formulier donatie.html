@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../script/javascript.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="myProgress">
+  <div id="myBar">50%</div>
+</div>
+
+
+ <form action="">
+  <label for="fname" class="center_form">Your name:</label><br>
+  <input type="text"  name="fname" placeholder="your name  must" required > <br><br>
+
+   <label for="phone" class="links_form">Enter jou Telefoonnummer:</label>  <label for="E-mail"  class="form_left">E-mail</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678 must" required>
+
+ 
+  <input type="email" name="E-mail" id="" required>
+<br><br>
+
+<select name="reason" id="reason">
+  <option value="nagedachtenis overleden persoon" selected >nagedachtenis overleden persoon</option>
+  <option value="">spontane actie</option>
+  <option value="fiat">veel geleerd van website</option>
+  <option value="audi"> persoonlijk verbonden</option>
+  <option value="">wil helpen</option>
+  <option value="">maakt zorgen</option>
+  <option value="">gewoon</option>
+  </select>
+<br><br>
+ <label class="center_form">Bankrekeningnummer</label> <br>
+            <input type="text" name="rekening" placeholder="must" required>
+<br>
+<div class="center_form"> 
+  <label>Bedrag van donatie (€)</label> <br>
+            <input type="number" class="donatie_feld" id="donationAmount" name="bedrag" step="0.01" min="0.01" required> <br><br>
+
+  <label>Wijze van doneren</label>
+          <br><br>
+                <label><input type="radio" name="wijze" value="zelf_storten" required> Zelf storten</label> <br><br>
+                <label><input type="radio" name="wijze" value="incasso"> Incasso-opdracht</label> </div>
+                
+  <div class="buttons">
+                <button type="submit" onclick="toonfoto()" id="zend" class="submit-btn">Verzenden</button>
+                <button type="reset" id="cancel" class="cancel-btn">Annuleren</button>
+            </div>
+ </form>
+
+   <img id="thankyou" src="../img/thank you.webp" class="thx" alt="" width="550px">
+ <br><br><br><br>
+    <footer>
+       <div class="contact"><h2>donation <br>workshop <br>contact</h2> </div>
+       <img class="footer-logo" src="../img/jonge-aanwas_logo.png" alt="" width="125px"> 
+        <div class="logo-text-footer" ><h2>jongeren in de criminaliteit</h2> </div>
+    </footer>
+</body>
+</html>
