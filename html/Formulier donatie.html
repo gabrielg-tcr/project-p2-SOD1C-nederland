@@ -8,11 +8,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="myProgress">
-  <div id="myBar">50%</div>
-</div>
-
-
+ <p id="demo"></p>
+ <br>
+<button id="moon" onclick="dark()"> background ⋆⁺₊⋆ ☾⋆⁺₊⋆</button>
+<button id="sun" onclick="light()"> color ⋆｡ ﾟ☁︎｡ ⋆｡ ﾟ☀︎｡ ⋆｡ ﾟ</button>
+<br>
  <form action="">
   <label for="fname" class="center_form">Your name:</label><br>
   <input type="text"  name="fname" placeholder="your name  must" required > <br><br>
@@ -47,7 +47,7 @@
                 <label><input type="radio" name="wijze" value="incasso"> Incasso-opdracht</label> </div>
                 
   <div class="buttons">
-                <button type="submit" onclick="toonfoto()" id="zend" class="submit-btn">Verzenden</button>
+                <button type="submit" onclick="addDonation(50)" id="zend" class="submit-btn">Verzenden</button>
                 <button type="reset" id="cancel" class="cancel-btn">Annuleren</button>
             </div>
  </form>
