@@ -36,7 +36,7 @@ right: 600px;
     font-size: 35px;
 }
 
-.islam_button {
+.islam_button  {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     width: 180px;
     height: 180px;
@@ -61,6 +61,7 @@ right: 600px;
 
 .protestanteisme_button {
     position: absolute;
+    top: -190px;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     width: 180px;
     height: 180px;
@@ -71,6 +72,7 @@ border-color: black;
 
 .hindoeisme_button {
     position: absolute;
+     top: -190px;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     width: 180px;
     height: 180px;
@@ -81,6 +83,7 @@ border-color: black;
 
 .Boeddhisme_button {
  position: absolute;
+  top: -190px;
  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
  width: 180px;
  height: 180px;
@@ -157,7 +160,7 @@ animation-duration: 4s;
 
 .doel_tekst {
       position:absolute;
-bottom: 150px;
+top: 225px;
 left: 900px;
   background-color: white;
   color: white;
@@ -239,7 +242,7 @@ left: 500px;
 .impact {
     position: absolute;
     left: 950px;
-    bottom: 200px;
+    bottom: 100px;
 }
 
 .IMPACT_TEKST {
@@ -344,7 +347,7 @@ left: 580px;
 
   .OIP {
     position: absolute;
-    top: 1700px;
+    top: 1800px;
     left: 1000px;
   }
 
@@ -581,3 +584,26 @@ p {
   text-align: center;
   color: black; }
   
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightskyblue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
