@@ -8,11 +8,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="myProgress">
  <p id="demo"></p>
 <br>
 
 <br>
- <form action="">
+ <form action="#" method="post" onsubmit="doneer();return false">
   <label for="fname" class="center_form">Your name:</label><br>
   <input type="text"  name="fname" placeholder="your name  must" required > <br><br>
 
@@ -36,6 +37,12 @@
  <label class="center_form">Bankrekeningnummer</label> <br>
             <input type="text" name="rekening" placeholder="must" required>
 <br>
+
+
+<div id="myBar" ></div>
+<div id="myBedrag">3500</div>
+<div id="myPercentage"></div>
+
 <div class="center_form"> 
   <label>Bedrag van donatie (€)</label> <br>
             <input type="number" class="donatie_feld" id="donationAmount" name="bedrag" step="0.01" min="0.01" required> <br><br>
@@ -46,8 +53,8 @@
                 <label><input type="radio" name="wijze" value="incasso"> Incasso-opdracht</label> </div>
                 
   <div class="buttons">
-                 <button type="submit" onclick="addDonation(50)" id="zend" class="submit-btn">Verzenden</button>
-                <button type="reset" id="cancel" class="cancel-btn">Annuleren</button>
+                 <input type="submit"  id="zend" class="submit-btn"></input>
+                <button type="reset" id="cancel" class="cancel-btn">Annuleren </button>
             </div>
  </form>
 

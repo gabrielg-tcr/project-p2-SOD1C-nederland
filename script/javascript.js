@@ -1,6 +1,13 @@
 console.log("hallo");
 
 
+window.onload = function () {
+console.log("Page is fully loaded");
+start();
+// Your code here
+};
+
+
 function toonfoto() {
 document.getElementById("thankyou").style.display = "block";
 }
@@ -37,41 +44,73 @@ function light() {
 }
 
 
+
 var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
 
 
 var x = setInterval(function() {
 
  
-  var now = new Date().getTime();
+ var now = new Date().getTime();
     
 
-  var distance = countDownDate - now;
+var distance = countDownDate - now;
     
  
-  var days = Math.floor(distance / (90000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (20000 * 60 * 60 * 24)) / (90000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ var days = Math.floor(distance / (90000 * 60 * 60 * 24));
+ var hours = Math.floor((distance % (20000 * 60 * 60 * 24)) / (90000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
 
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+ document.getElementById("demo").innerHTML = days + "d " + hours + "h "
++ minutes + "m " + seconds + "s ";
     
  
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "the periode is bijna afgelopen";
-  }
-}, 1000);
+   if (distance < 0) {
+     clearInterval(x);
+     document.getElementById("demo").innerHTML = "the periode is bijna afgelopen";
+   }
+   
+ }, 1000);
 
-function myFunction() {
-  var txt;
-  if (confirm("Pls donate, in de donatie pagina, zodat we meer mensen, kunnen berijken, over de probleem, om de zrogen dat jongeren in criminaliteit minder wordt")) {
+ function myFunction() {
+   var txt;
+   if (confirm("Pls donate, in de donatie pagina, zodat we meer mensen, kunnen berijken, over de probleem, om de zrogen dat jongeren in criminaliteit minder wordt")) {
   
-  } else {
+   } else {
   
-  }
+   }
+ }
+
+function doneer() {
+  let elemBar = document.getElementById("myBar");
+let elemBedrag = document.getElementById("myBedrag");
+let elemPercentage = document.getElementById("myPercentage");
+    let huidigbedrag = elemBedrag.innerHTML;
+    let elem2 = document.getElementById("donationAmount");
+    let doneerbedrag = elem2.value;
+
+    let nieuwBedrag = Number(huidigbedrag) + Number(doneerbedrag);
+    elemBedrag.innerHTML = nieuwBedrag;
+    elemPercentage.innerHTML = 100 / 5000 * nieuwBedrag + "%";
+
+    elemBar.style.width = 100 / 5000 * nieuwBedrag  + "%";
+    elemBar.innerHTML = 100 / 5000 * nieuwBedrag   + "%";
+    
+}
+
+
+function start() {
+let elemBar = document.getElementById("myBar");
+let elemBedrag = document.getElementById("myBedrag");
+let elemPercentage = document.getElementById("myPercentage");
+let huidigbedrag = elemBedrag.innerHTML;
+let huidigpercentage = 100 / 5000 *  huidigbedrag;
+
+elemBar.style.width = huidigpercentage + "%";
+elemBar.innerHTML = huidigpercentage + "%";
+
 }
 
 setInterval(myFunction, 180000);
